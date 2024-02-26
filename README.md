@@ -13,11 +13,11 @@ public class jdbc {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			//step2
-			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc","root","ROHITk@1");
+			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:0011/jdbc","root","tyu@");
 			//System.out.println(conn);
 			
 			//step3
-			PreparedStatement ps=conn.prepareStatement("insert into jdbc_tb(id,name,roll,address) values('2172','Monuji','1610','India11' )");
+			PreparedStatement ps=conn.prepareStatement("insert into jdbc_tb(id,name,roll,address) values('2172','nuji','1610','India11' )");
 			
 			//step4
 			ps.execute();
